@@ -2,7 +2,7 @@
   --Purple-50: hsl(260, 100%, 95%);
   --Purple-300: hsl(264, 82%, 80%);
   --Purple-500: hsl(263, 55%, 52%);
-  --White: -hsl(0, 0%, 100%);
+  --White: hsl(0, 0%, 100%);
   --Grey-100: hsl(214, 17%, 92%);
   --Grey-200: hsl(0, 0%, 81%);
   --Grey-400: hsl(224, 10%, 45%);
@@ -16,13 +16,97 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Barlow Semi Condensed";
 }
 
 html {
-    font-size: var(--Font-size);
+  font-size: var(--Font-size);
 }
 
 body {
-    min-width: 100vw;
-    min-height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  padding: 4.6rem 2.3rem;
+}
+
+img {
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.daniel,
+.jonathan,
+.jeanette,
+.patrick,
+.kira {
+  padding: 2.3rem;
+  border-radius: 1rem;
+  background-color: var(--Purple-500);
+  margin-bottom: 2.5rem;
+  color: var(--White);
+
+
+  & .content-primary {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+  }
+
+  & .content-secondary {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}
+
+.title-image-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+
+  & .name-status-container {
+    margin-left: 1.3rem;
+
+    & h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding-bottom: 0.2rem;
+    }
+
+    & h2 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.daniel {
+  & .daniel-image {
+    border: 3px solid var(--Purple-300)
+  }
+
+  & h2, .content-secondary {
+    color: var(--Purple-300)
+  }
+
+}
+
+.jonathan {
+  background-color: var(--Grey-400);
+
+  & h2 {
+    color:var(--Grey-200)
+  }
+}
+
+.jeanette {
+
+}
+
+/* TODO  box shadow for each section */
