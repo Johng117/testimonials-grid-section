@@ -36,8 +36,8 @@ body {
 
 img {
   border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .daniel,
@@ -50,7 +50,7 @@ img {
   background-color: var(--Purple-500);
   margin-bottom: 2.5rem;
   color: var(--White);
-
+  box-shadow: 1.5rem 0.5rem 1.7rem 1rem var(--Grey-200);
 
   & .content-primary {
     font-size: 1.6rem;
@@ -88,25 +88,40 @@ img {
 
 .daniel {
   & .daniel-image {
-    border: 3px solid var(--Purple-300)
+    border: 3px solid var(--Purple-300);
   }
 
-  & h2, .content-secondary {
-    color: var(--Purple-300)
+  & h2,
+  .content-secondary {
+    color: var(--Purple-300);
   }
-
 }
 
 .jonathan {
   background-color: var(--Grey-400);
 
   & h2 {
-    color:var(--Grey-200)
+    color: var(--Grey-200);
   }
 }
 
-.jeanette {
+.jeanette,
+.kira {
+  background-color: var(--White);
+  color: var(--Grey-500);
+  & h2,
+  .content-secondary {
+    color: var(--Grey-400);
+  }
+}
 
+.patrick {
+  background-color: var(--Dark-blue);
+  color: var(--Grey-100);
+
+  & .patrick-image {
+    border: 3px solid var(--Purple-500);
+  }
 }
 
 /* TODO  box shadow for each section */
