@@ -124,4 +124,85 @@ img {
   }
 }
 
-/* TODO  box shadow for each section */
+@media only screen and (min-width: 600px) {
+  
+  .daniel,
+  .jonathan,
+  .jeanette,
+  .patrick,
+  .kira {
+    width: 42rem;
+    margin: 0 auto 2.5rem auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 26rem);
+    gap: 2rem;
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  img {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .daniel,
+  .jonathan,
+  .jeanette,
+  .patrick,
+  .kira {
+    width: 24rem;
+    margin-bottom: 0;
+
+    & .content-primary {
+      font-size: 1.8rem;
+    }
+
+    & .content-secondary {
+      font-size: 1.2rem;
+    }
+  }
+
+  .jeanette,
+  .jonathan {
+    height: 26rem;
+  }
+
+  .daniel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .patrick {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .kira {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .title-image-container {
+    & .name-status-container {
+      margin-left: 1.5rem;
+
+      & h1 {
+        font-size: 1.4rem;
+      }
+
+      & h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
