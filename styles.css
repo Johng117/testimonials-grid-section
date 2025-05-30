@@ -46,7 +46,7 @@ img {
 .patrick,
 .kira {
   padding: 2.3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--Purple-500);
   margin-bottom: 2.5rem;
   color: var(--White);
@@ -87,6 +87,10 @@ img {
 }
 
 .daniel {
+  & .daniel-quotation {
+    display: none;
+  }
+
   & .daniel-image {
     border: 3px solid var(--Purple-300);
   }
@@ -125,7 +129,6 @@ img {
 }
 
 @media only screen and (min-width: 600px) {
-  
   .daniel,
   .jonathan,
   .jeanette,
@@ -146,7 +149,6 @@ img {
     margin: 0 auto;
   }
 
-  
   .daniel,
   .jonathan,
   .jeanette,
@@ -180,11 +182,9 @@ img {
     grid-row-start: 3;
     grid-row-end: 5;
   }
-
 }
 
 @media only screen and (min-width: 1240px) {
-
   body {
     display: flex;
     align-items: center;
@@ -206,6 +206,7 @@ img {
   .kira {
     width: auto;
     height: auto;
+    z-index:0;
   }
 
   .daniel {
@@ -213,6 +214,22 @@ img {
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 5;
+    position: relative;
+
+    & p.content-primary {
+      z-index: 1;
+    }
+
+    & .daniel-quotation {
+      display: block;
+      position: absolute;
+      top: 0rem;
+      left: 27rem;
+      border-radius: 0;
+      height: 8rem;
+      width: 8rem;
+      z-index: -1;
+    }
   }
 
   .jonathan {
