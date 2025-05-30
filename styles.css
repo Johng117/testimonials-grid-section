@@ -73,7 +73,7 @@ img {
   & .name-status-container {
     margin-left: 1.3rem;
 
-    & h1 {
+    & h1 {justify-self: start;
       font-size: 1.2rem;
       font-weight: 600;
       padding-bottom: 0.2rem;
@@ -113,6 +113,7 @@ img {
 .kira {
   background-color: var(--White);
   color: var(--Grey-500);
+  
   & h2,
   .content-secondary {
     color: var(--Grey-400);
@@ -161,6 +162,11 @@ img {
   .jeanette,
   .jonathan {
     height: 20rem;
+    margin: 0;
+  }
+
+  .daniel, .patrick {
+    margin: 0 0 0 auto;
   }
 
   .daniel {
@@ -181,6 +187,7 @@ img {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
+    margin: 0;
   }
 }
 
